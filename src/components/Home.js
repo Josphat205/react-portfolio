@@ -51,7 +51,7 @@ const onButtonCv = () => {
           <img src="https://res.cloudinary.com/defpepdn3/image/upload/v1668598153/logo/yu_xfsdjy.jpg" alt="image" />
         </div>
         </div>
-        <h3 className="text-3xl pt-3 sm:text-4xl font-bold text-[#8b8f9b]">
+        <h3 className="text-2xl pt-3 sm:text-3xl font-bold text-[#8b8f9b]">
           <span className="typi">I am a</span>
           <Typical
             steps={[

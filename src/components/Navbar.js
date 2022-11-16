@@ -12,16 +12,17 @@ import {
 import {
   GrResume
 } from "react-icons/gr";
-import Logo from "../assets/logo1.jpg";
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   const closeNav = () => setNav(false);
   return (
     <div className=" sticky my-0 w-full justify-between items-center text-gray-200 flex px-4 h-[80px] bg-slate-900">
+      <Link to='/'>
       <div className="logo">
       <img src="https://res.cloudinary.com/defpepdn3/image/upload/v1668596601/logo/logo_rvf4ds.png" className=" text-gray-200 my-logo  mr-3 h-15" alt="Flowbite Logo"/>
       </div>
+      </Link>
       {/* navlinks */}
       <ul className="hidden md:flex">
         <Link to='/'><li>Home</li></Link>
