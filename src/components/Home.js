@@ -1,37 +1,73 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
+import {motion} from "framer-motion"
+import resume from './documents/jk-resume.pdf'
+import cv from './documents/jk-cv.pdf'
 function Home() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('jk-resume.pdf').then(response => {
+    fetch(resume).then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'jk-resume.pdf';
+            alink.download = resume;
             alink.click();
         })
     })
 }
+const onButtonCv = () => {
+  // using Java Script method to get PDF file
+  fetch(cv).then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = cv;
+          alink.click();
+      })
+  })
+}
   return (
-    <div name="" className="w-full h-screen bg-[#0a192f]">
+    <motion.div name="" id="home" className="w-full h-screen bg-[#0a192f]"
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}
+    >
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 justify-center h-full flex flex-col">
+        <div className="title-contain">
+        <div className="titles">
         <p className="text-gray-200">Hi, My name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Josphat Kiploman
         </h1>
+        </div>
+        <div className="img-contain">
+          <img src="https://res.cloudinary.com/defpepdn3/image/upload/v1668598153/logo/yu_xfsdjy.jpg" alt="image" />
+        </div>
+        </div>
         <h3 className="text-3xl pt-3 sm:text-4xl font-bold text-[#8b8f9b]">
-          I am a
+          <span className="typi">I am a</span>
           <Typical
             steps={[
-              " Full-Stack Developer!",
+              " Full-Stack Developer...!",
               500,
-              " UI/UX Designer!",
+              " Good Team player...!",
               500,
-              " Software Engineer!",
+              " Software Engineer...!",
+              500,
+              " Time and Task Manager...!",
+              500,
+              " Creative problem-solver...!",
+              500,
+              " Quick Learner...!",
+              500,
+              " End-User Focused...!",
               500,
             ]}
             loop={Infinity}
@@ -57,7 +93,9 @@ function Home() {
             </svg>
             <span>Download Resume</span>
           </button>
-          <button className="bg-gray-300 mr-3 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+          <button className="bg-gray-300 mr-3 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+          onClick={onButtonCv}
+          >
             <svg
               className="fill-current w-4 h-4 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +107,7 @@ function Home() {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

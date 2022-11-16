@@ -16,10 +16,11 @@ import Logo from "../assets/logo1.jpg";
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const closeNav = () => setNav(false);
   return (
-    <div className=" my-0 w-full justify-between items-center text-gray-200 flex px-4 h-[80px] bg-slate-900">
+    <div className=" sticky my-0 w-full justify-between items-center text-gray-200 flex px-4 h-[80px] bg-slate-900">
       <div className="logo">
-      <img src="https://flowbite.com/docs/images/logo.svg" className=" text-gray-200  mr-3 h-8" alt="Flowbite Logo"/>
+      <img src="https://res.cloudinary.com/defpepdn3/image/upload/v1668596601/logo/logo_rvf4ds.png" className=" text-gray-200 my-logo  mr-3 h-15" alt="Flowbite Logo"/>
       </div>
       {/* navlinks */}
       <ul className="hidden md:flex">
@@ -41,15 +42,15 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-slate-900 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen opacity-100 bg-slate-900 flex flex-col justify-center items-center"
         }
       >
-        <Link to='/'><li className="text-4xl py-6">Home</li></Link>
-        <Link to='/about'> <li className="text-4xl py-6">About</li></Link>
-        <Link to='/skills'><li className="text-4xl py-6">Skills</li></Link>
-        <Link to='/work'><li className="text-4xl py-6">Work</li></Link>
-        <Link to='/testimonial'> <li className="text-4xl py-6">Testimonial</li></Link>
-        <Link to='/contact'><li className="text-4xl py-6">Contact</li></Link>
+        <Link to='/'><li onClick={closeNav} className="text-3xl py-6">Home</li></Link>
+        <Link to='/about'> <li onClick={closeNav} className="text-3xl py-6">About</li></Link>
+        <Link to='/skills'><li onClick={closeNav} className="text-3xl py-6">Skills</li></Link>
+        <Link to='/work'><li onClick={closeNav} className="text-3xl py-6">Work</li></Link>
+        <Link to='/testimonial'> <li onClick={closeNav} className="text-3xl py-6">Testimonial</li></Link>
+        <Link to='/contact'><li onClick={closeNav} className="text-3xl py-6">Contact</li></Link>
       </ul>
 
       {/* social links */}

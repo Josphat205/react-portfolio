@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import TestimonialData from "./data/TestimonialData";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./Testimonial.css";
+ import "./Testimonial.css";
 import "swiper/css/pagination";
 // Import Swiper styles
 import "swiper/css";
@@ -9,43 +9,51 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation,Pagination } from "swiper";
+import {motion} from "framer-motion"
 const Testimonial = () => {
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-5">
+    <motion.div id="testimonial" name="work" className="w-full md:h-screen opacity-1 text-gray-300 bg-[#0a192f]"
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}
+    >
+      <div className="max-w-[1000px] mx-auto p-2 flex flex-col justify-center w-full h-full">
+        <div className="pb-2">
           <p className="text-3xl font-bold inline border-b-4 text-gray-300  border-green-600">
             Testimonials
           </p>
-          <p className="py-4">// Check out the Testimonials </p>
+          <p className="py-3">// Check out the Testimonials </p>
         </div>
-        <div className=" swiper-container">
           <Swiper
             navigation={true}
             modules={[Navigation,Pagination]}
-            slidesPerView={2}
-            spaceBetween={20}
             pagination={{
               clickable: true,
             }}
-            breakpoints={{
-              640: {
-                width: 640,
+            breakpoints={{        
+              480: {
                 slidesPerView: 1,
+                spaceBetween:10,
               },
               768: {
-                width: 768,
                 slidesPerView: 2,
+                spaceBetween:10
+              },
+              1080: {
+                slidesPerView: 3,
+                spaceBetween:10,
               },
             }}
-            className="swiper-container"
+            className=" swiper-b "
           >
             {TestimonialData.map((data) => {
               return (
                 <SwiperSlide key={data.id} className=" swiper-body">
                   <div className="swiper">
-                    <div className="flex flex-row gap-3 img-contain">
+                    <div className="flex flex-row gap-5 img-contain">
+                      
                       <img className="image" src={data.picture} alt="my profile" />
+                    
                       <div className="social ">{data.social?.map((link)=>{
                         return(
                           <small className="s-link" key={link.id}>
@@ -64,9 +72,9 @@ const Testimonial = () => {
               );
             })}
           </Swiper>
-        </div>
+        
       </div>
-    </div>
+    </motion.div>
   );
 };
 
