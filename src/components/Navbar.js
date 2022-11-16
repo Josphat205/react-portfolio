@@ -18,10 +18,8 @@ function Navbar() {
   const closeNav = () => setNav(false);
   return (
     <div className=" sticky my-0 w-full justify-between items-center text-gray-200 flex px-4 h-[80px] bg-slate-900">
-      <Link to='/'>
-      <div className="logo">
+      <Link to='/' className="logo">
       <img src="https://res.cloudinary.com/defpepdn3/image/upload/v1668596601/logo/logo_rvf4ds.png" className=" text-gray-200 my-logo  mr-3 h-15" alt="Flowbite Logo"/>
-      </div>
       </Link>
       {/* navlinks */}
       <ul className="hidden md:flex">
@@ -43,15 +41,15 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen opacity-100 bg-slate-900 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen opacity-1000 bg-slate-900 flex flex-col justify-center items-center"
         }
       >
-        <Link to='/'><li onClick={closeNav} className="text-3xl mt-0 pt-0 pb-4">Home</li></Link>
-        <Link to='/about'> <li onClick={closeNav} className="text-3xl py-4">About</li></Link>
-        <Link to='/skills'><li onClick={closeNav} className="text-3xl py-4">Skills</li></Link>
-        <Link to='/work'><li onClick={closeNav} className="text-3xl py-4">Work</li></Link>
-        <Link to='/testimonial'> <li onClick={closeNav} className="text-3xl py-4">Testimonial</li></Link>
-        <Link to='/contact'><li onClick={closeNav} className="text-3xl py-4">Contact</li></Link>
+        <Link to='/'><li onClick={closeNav} className="text-3xl mt-0 pt-0 pb-4 opacity-100">Home</li></Link>
+        <Link to='/about'> <li onClick={closeNav} className="text-3xl py-4 opacity-100">About</li></Link>
+        <Link to='/skills'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Skills</li></Link>
+        <Link to='/work'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Work</li></Link>
+        <Link to='/testimonial'> <li onClick={closeNav} className="text-3xl py-4 opacity-100">Testimonial</li></Link>
+        <Link to='/contact'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Contact</li></Link>
       </ul>
 
       {/* social links */}
