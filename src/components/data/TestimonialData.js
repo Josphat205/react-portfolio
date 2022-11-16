@@ -71,6 +71,28 @@ const TestimonialData = [
         class: 'github',
       },
     ],
+  },
+  {
+    id: Id(),
+    picture:
+      'https://res.cloudinary.com/defpepdn3/image/upload/v1668611690/logo/siku_kiozzd.jpg',
+    name: 'Christian Siku',
+    recomandation:
+      "Josphat is a very creative and good developer. She possesses the technical knowledge to become an extraordinary developer. he is a brilliant and humble man and can learn in a fast-paced environment. he's also open to ideas and listens to constructive criticism, approaching it as a thoughtful way of improving himself. I would highly recommend him as a software developer and designer.",
+    social: [
+      {
+        id: Id(),
+        mediaLink: 'https://www.linkedin.com/in/christian-siku/',
+        icon: <Icon icon={linkedin} size={22} />,
+        class: 'linkedin',
+      },
+      {
+        id: Id(),
+        mediaLink: 'https://github.com/Chrissiku',
+        icon: <Icon icon={github} size={22} />,
+        class: 'github',
+      },
+    ],
   }
 ];
 
