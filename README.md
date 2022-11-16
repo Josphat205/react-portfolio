@@ -6,7 +6,7 @@ In this portfolio you can get to know more about developer josphat kiploman
 
 [portfolio]()
 
-![Screen-shot](assets/Screen-shot.png)
+![Screen-shot](src/assets/screen-shot.png)
 ## Run Locally
 
 Clone the project
