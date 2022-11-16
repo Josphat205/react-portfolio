@@ -45,12 +45,12 @@ function Navbar() {
             : "absolute top-0 left-0 w-full h-screen opacity-100 bg-slate-900 flex flex-col justify-center items-center"
         }
       >
-        <Link to='/'><li onClick={closeNav} className="text-3xl py-6">Home</li></Link>
-        <Link to='/about'> <li onClick={closeNav} className="text-3xl py-6">About</li></Link>
-        <Link to='/skills'><li onClick={closeNav} className="text-3xl py-6">Skills</li></Link>
-        <Link to='/work'><li onClick={closeNav} className="text-3xl py-6">Work</li></Link>
-        <Link to='/testimonial'> <li onClick={closeNav} className="text-3xl py-6">Testimonial</li></Link>
-        <Link to='/contact'><li onClick={closeNav} className="text-3xl py-6">Contact</li></Link>
+        <Link to='/'><li onClick={closeNav} className="text-3xl py-3">Home</li></Link>
+        <Link to='/about'> <li onClick={closeNav} className="text-3xl py-4">About</li></Link>
+        <Link to='/skills'><li onClick={closeNav} className="text-3xl py-4">Skills</li></Link>
+        <Link to='/work'><li onClick={closeNav} className="text-3xl py-4">Work</li></Link>
+        <Link to='/testimonial'> <li onClick={closeNav} className="text-3xl py-4">Testimonial</li></Link>
+        <Link to='/contact'><li onClick={closeNav} className="text-3xl py-4">Contact</li></Link>
       </ul>
 
       {/* social links */}
