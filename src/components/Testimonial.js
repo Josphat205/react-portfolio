@@ -12,12 +12,12 @@ import { Navigation,Pagination } from "swiper";
 import {motion} from "framer-motion"
 const Testimonial = () => {
   return (
-    <motion.div id="testimonial" name="work" className="w-full md:h-screen opacity-1 text-gray-300 bg-[#0a192f]"
+    <motion.div id="testimonial" name="work" className="w-full md:h-screen opacity-1 py-4 text-gray-300 bg-[#0a192f]"
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
     >
-      <div className="max-w-[1000px] mx-auto p-2 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto py-2 flex flex-col justify-center w-full h-full">
         <div className="pb-2">
           <p className="text-3xl font-bold inline border-b-4 text-gray-300  border-green-600">
             Testimonials
