@@ -11,6 +11,7 @@ import Rails from "../assets/rails.png";
 import Ruby from "../assets/ruby.png";
 import Postgres from "../assets/post.jpg";
 import Express from "../assets/express.png";
+import Laravel from "../assets/laravel.png";
 import Tailwind from "../assets/tail.png";
 import { motion } from "framer-motion";
 const Skills = () => {
@@ -34,7 +35,7 @@ const Skills = () => {
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
           <div className="shadow-md shadow-gray-800 hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={HTML} alt="HTHL icon" />
-            <p className="my-4">HTHL</p>
+            <p className="my-4">HTML</p>
           </div>
           <div className="shadow-md shadow-gray-800 hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={CSS} alt="HTHL icon" />
@@ -87,6 +88,10 @@ const Skills = () => {
           <div className="shadow-md shadow-gray-800 hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Tailwind} alt="HTHL icon" />
             <p className="my-4">TAILWIND</p>
+          </div>
+          <div className="shadow-md shadow-gray-800 hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Laravel} alt="HTHL icon" />
+            <p className="my-4">LARAVEL</p>
           </div>
         </div>
       </div>
