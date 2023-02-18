@@ -6,6 +6,7 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
+import { Link } from "react-router-dom";
 const features = [
   
   {
@@ -62,6 +63,7 @@ const Project = () => {
             </div>
           </div>
          <div className="img-container">
+         <Link to="/contact" className="contact-link">Contact me</Link>
          <img
             src="https://res.cloudinary.com/defpepdn3/image/upload/v1676721304/portfolio%20img/PRISMA-multiple-mockups-optimized-768x391_apa17j.jpg"
             alt="Product screenshot"
