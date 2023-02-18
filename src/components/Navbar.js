@@ -28,6 +28,7 @@ function Navbar() {
         <Link to='/skills'><li>Skills</li></Link>
         <Link to='/work'><li>Work</li></Link>
         <Link to='/testimonial'> <li>Testimonial</li></Link>
+        <Link to='/project'> <li>Get Project</li></Link>
         <Link to='/contact'><li>Contact</li></Link>
       
       </ul>
