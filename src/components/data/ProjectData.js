@@ -1,6 +1,5 @@
 import school from '../../assets/projects/school.png';
 import africa from '../../assets/projects/africa.jpg';
-import spaceX from '../../assets/projects/desktop.png';
 import Weather from '../../assets/projects/desk.jpg';
 import portfolio from '../../assets/projects/portfolio.png';
 import ecomm from '../../assets/projects/ecomm.png';
