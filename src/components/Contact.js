@@ -18,14 +18,14 @@ function Contact() {
       });
   };
   return (
-    <motion.div name="contact" id="contact" className="w-full h-screen mt-5 bg-[#0a192f] text-gray-300 mb-10"
+    <motion.div name="contact" id="contact" className="w-full h-screen  bg-[#0a192f] text-gray-300 mb-10"
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
     >
-      <div className="flex flex-col justify-center items-center mt-8 w-full h-full">
-        <section className="bg-[#0a192f] dark:bg-gray-900 w-full">
-          <div className="py-4 lg:py-10 px-4 mx-auto max-w-screen-md mt-16">
+      <div className="flex  flex-col justify-center items-center w-full h-full">
+        <section className="bg-[#0a192f] mt-[160px] dark:bg-gray-900 scale-75 w-full">
+          <div className="py-4 lg:py-10 px-4 mx-auto max-w-screen-md z-1">
           <p className="text-4xl font-bold inline border-b-4 border-green-600">
               Contact me
             </p>
@@ -97,7 +97,7 @@ function Contact() {
                   placeholder="Leave a comment..."
                 ></textarea>
               </div>
-              <button type="submit" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Send Message</button>
+              <button type="submit" className="text-white mb-4 bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Send Message</button>
             </form>
           </div>
         </section>

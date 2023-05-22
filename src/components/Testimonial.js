@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+
 import TestimonialData from "./data/TestimonialData";
 import { Swiper, SwiperSlide } from "swiper/react";
  import "./Testimonial.css";
@@ -18,7 +18,7 @@ const Testimonial = () => {
     transition={{ duration: 0.5 }}
     >
       <div className="max-w-[1000px] mx-auto py-2 flex flex-col justify-center w-full h-full">
-        <div className="pb-2">
+        <div className="pb-2 mt-[80px]">
           <p className="text-3xl font-bold inline border-b-4 text-gray-300  border-green-600">
             Testimonials
           </p>
@@ -44,11 +44,11 @@ const Testimonial = () => {
                 spaceBetween:10,
               },
             }}
-            className=" swiper-b "
+            className=" swiper-b z-1 "
           >
             {TestimonialData.map((data) => {
               return (
-                <SwiperSlide key={data.id} className=" swiper-body">
+                <SwiperSlide key={data.id} className=" swiper-body z-1">
                   <div className="swiper">
                     <div className="flex flex-row gap-5 img-contain">
                       

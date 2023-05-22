@@ -26,7 +26,7 @@ const Skills = () => {
     >
       {/* Container */}
       <div className="max-w-(1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="mt-10 lg:ml-[100px]">
+        <div className="mt-[80px]  lg:ml-[100px]">
           <p className="text-4xl font-bold inline border-b-4 border-green-500">
             Experience
           </p>

@@ -17,7 +17,7 @@ function Navbar() {
   const handleClick = () => setNav(!nav);
   const closeNav = () => setNav(false);
   return (
-    <div className=" sticky my-0 w-full justify-between items-center text-gray-200 flex px-4 h-[80px] bg-slate-900">
+    <div className=" z-40 fixed my-0 w-full justify-between items-center text-gray-200 flex px-4 h-[80px] bg-slate-900">
       <Link to='/' className="logo">
       <img src="https://res.cloudinary.com/defpepdn3/image/upload/v1668596601/logo/logo_rvf4ds.png" className=" text-gray-200 my-logo  mr-3 h-15" alt="Flowbite Logo"/>
       </Link>
@@ -28,7 +28,6 @@ function Navbar() {
         <Link to='/skills'><li>Skills</li></Link>
         <Link to='/work'><li>Work</li></Link>
         <Link to='/testimonial'> <li>Testimonial</li></Link>
-        <Link to='/project'> <li>Get Project</li></Link>
         <Link to='/contact'><li>Contact</li></Link>
       
       </ul>
@@ -42,7 +41,7 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen opacity-1000 bg-slate-900 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 z-40 w-full h-screen opacity-1000 bg-slate-900 flex flex-col justify-center items-center"
         }
       >
         <Link to='/'><li onClick={closeNav} className="text-3xl mt-0 pt-0 pb-4 opacity-100">Home</li></Link>
@@ -50,7 +49,6 @@ function Navbar() {
         <Link to='/skills'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Skills</li></Link>
         <Link to='/work'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Work</li></Link>
         <Link to='/testimonial'> <li onClick={closeNav} className="text-3xl py-4 opacity-100">Testimonial</li></Link>
-        <Link to='/project'> <li onClick={closeNav} className="text-3xl py-4 opacity-100">Get Project</li></Link>
         <Link to='/contact'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Contact</li></Link>
       </ul>
 

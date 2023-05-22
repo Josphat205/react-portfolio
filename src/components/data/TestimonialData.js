@@ -7,7 +7,7 @@ const TestimonialData = [
   {
     id: Id(),
     picture:
-      'https://media-exp1.licdn.com/dms/image/D4D03AQFBJB2_xEkbxQ/profile-displayphoto-shrink_200_200/0/1665246238582?e=1672272000&v=beta&t=fYzMaAjRheUzLu__gTfxIy7uw-SwcyD-hn8bIPje3ug',
+      'https://res.cloudinary.com/defpepdn3/image/upload/v1684769626/img-portfolio/1665246238582_hm4rhw.jpg',
     name: 'Inieke Sendy',
     recomandation:
       'Josphat is exactly the sort of software developer any company would love. I met as a friend on microverse, and we had an activity to work on together. I was struggling with the data structure and algorithm, but he within a few minutes was able to solve the problem and explain it in the most understandable way. He has a great way of simplifying complex problems into bite-sized pieces, he is also a fun person to chat with! Indeed a very good team player he is.Josphat is exactly the sort of software developer any company would love.',
