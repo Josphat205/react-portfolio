@@ -1,9 +1,10 @@
 import school from '../../assets/projects/school.png';
 import africa from '../../assets/projects/africa.png';
-import calc from '../../assets/projects/calc.png';
 import spaceX from '../../assets/projects/desktop.png';
 import Weather from '../../assets/projects/desk.png';
 import portfolio from '../../assets/projects/portfolio.png';
+import ecomm from '../../assets/projects/ecomm.png';
+import tutor from '../../assets/projects/tutor.png';
 import { v4 as Id } from 'uuid';
 const ProjectData = [
   {
@@ -17,8 +18,8 @@ const ProjectData = [
     id: Id(),
     img:portfolio,
     name:"Portfolio app",
-    live:"https://josphat205.github.io/Developer-loman-portfolio/",
-    demo:"https://github.com/Josphat205/Developer-loman-portfolio"
+    live:"https://loman-portfolio.netlify.app/",
+    demo:"https://github.com/Josphat205/react-portfolio"
   },
   {
     id: Id(),
@@ -36,17 +37,24 @@ const ProjectData = [
   },
   {
     id: Id(),
-    img:calc,
-    name:"Math Magician app",
-    live:"https://math-magician200.herokuapp.com/",
-    demo:"https://github.com/Josphat205/math-magician"
+    img:ecomm,
+    name:"Ecommerce app",
+    live:"https://ecomm-client-ten.vercel.app/",
+    demo:"https://github.com/Josphat205/ecomm-client"
   },
   {
     id: Id(),
     img:Weather,
     name:"Weather app",
-    live:"https://weather-app-200.herokuapp.com/",
+    live:"https://weather-app-react-henna.vercel.app/",
     demo:"https://github.com/Josphat205/Weather-App-React"
+  },
+  {
+    id: Id(),
+    img:tutor,
+    name:"Tutor Appointment App",
+    live:"https://starlit-syrniki-d3f2fe.netlify.app/",
+    demo:"https://github.com/leehaney254/tutors-appointment-frontend"
   }
 ]
 
