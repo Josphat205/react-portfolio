@@ -30,13 +30,6 @@ const ProjectData = [
   },
   {
     id: Id(),
-    img:spaceX,
-    name:"SpaceX React app",
-    live:"https://62dbece53e0238133d94702a--celadon-lamington-818c62.netlify.app/",
-    demo:"https://github.com/developerwaleed/SpaceX-Traveller-Hub"
-  },
-  {
-    id: Id(),
     img:ecomm,
     name:"Ecommerce app",
     live:"https://ecomm-client-ten.vercel.app/",
