@@ -30,7 +30,7 @@ function Contact() {
               Contact me
             </p>
             <p className="mt-5 lg:mb-10 font-light text-center text-gray-300 dark:text-gray-400 sm:text-xl">
-              I'm currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              I'm currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I'll  get back to you!
             </p>
             <form className="space-y-8 contact" ref={form} onSubmit={sendEmail}>
             <div>

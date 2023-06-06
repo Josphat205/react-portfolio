@@ -5,13 +5,8 @@ import {
   FaTimes,
   FaLinkedin,
   FaGithub,
+  FaUserGraduate
 } from "react-icons/fa";
-import {
-  HiOutlineMail
-} from "react-icons/hi";
-import {
-  GrResume
-} from "react-icons/gr";
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -19,7 +14,7 @@ function Navbar() {
   return (
     <div className=" z-40 fixed my-0 w-full justify-between items-center text-gray-200 flex px-4 h-[80px] bg-slate-900">
       <Link to='/' className="logo">
-      <img src="https://res.cloudinary.com/defpepdn3/image/upload/v1668596601/logo/logo_rvf4ds.png" className=" text-gray-200 my-logo  mr-3 h-15" alt="Flowbite Logo"/>
+      <img src="https://res.cloudinary.com/defpepdn3/image/upload/v1686049577/logo/lg_bvqcoy.png" className=" text-gray-200 my-logo  mr-3 mt-2 h-12" alt="Flowbite Logo"/>
       </Link>
       {/* navlinks */}
       <ul className="hidden md:flex">
@@ -56,7 +51,7 @@ function Navbar() {
       <div className="hidden lg:flex flex-col fixed top-[35%] left-2">
         <ul>
           <li className="w-[160px] h-[60px] justify-between items-center flex ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
-          <a className="flex justify-between items-center w-full" href="https://www.linkedin.com/in/josphatloman/">
+          <a className="flex justify-between items-center w-full" href="https://www.linkedin.com/in/josphat205/">
           Linkedin <FaLinkedin size={30} />
           </a>
           </li>
@@ -66,13 +61,8 @@ function Navbar() {
           </a>
           </li>
           <li className="w-[160px] h-[60px] justify-between items-center flex ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500">
-          <a className="flex justify-between items-center w-full" href="/">
-          Email <HiOutlineMail size={30} />
-          </a>
-          </li>
-          <li className="w-[160px] h-[60px] justify-between items-center flex ml-[-100px] hover:ml-[-10px] duration-300 bg-green-500">
-          <a className="flex justify-between items-center w-full" href="/">
-          Resume <GrResume size={30} />
+          <a className="flex justify-between items-center w-full" href="https://loman-portfolio.netlify.app/">
+          Portfolio <FaUserGraduate size={30} />
           </a>
           </li>
         </ul>
