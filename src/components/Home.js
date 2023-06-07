@@ -40,7 +40,7 @@ const onButtonCv = () => {
     >
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 justify-center h-full flex flex-col">
-        <div className="title-contain">
+        <div className="title-contain mt-4">
         <div className="titles">
         <p className="text-gray-200">Hi, My name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
@@ -74,9 +74,8 @@ const onButtonCv = () => {
             wrapper="span"
           />
         </h3>
-        <p className="py-4 max-w-[700px] text-[#d3d7e4] md:text-lg ">
-        Full-Stack web developer with a background in developing efficient software applications in a global market. 1+ year of experience, including mentoring 4+ junior developers to achieve concrete goals on a strict deadline. Strong skills include React, Database management, PostgreSQL, and Ruby
-
+        <p className="py-4 max-w-[700px] text-[#d3d7e4] md:text-lg">
+        Full-Stack web developer with a background in developing efficient software applications in a global market. 2+ year of experience, including mentoring 5+ junior developers to achieve concrete goals on a strict deadline. Strong skills include React, Database management, PostgreSQL, Collaboration, Nodejs, and Rails. Seeking to leverage solid skills in collaboration, communication, and problem-solving to help the team at your company.
         </p>
         <div className="flex flex-row mt-5">
           <button onClick={onButtonClick} className="bg-green-500 mr-3 hover:bg-green-700 text-white-800 font-bold py-2 px-4 rounded inline-flex items-center">

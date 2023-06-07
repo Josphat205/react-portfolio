@@ -22,6 +22,7 @@ function Navbar() {
         <Link to='/about'> <li>About</li></Link>
         <Link to='/skills'><li>Skills</li></Link>
         <Link to='/work'><li>Work</li></Link>
+        <Link to='/cert'><li>Certification</li></Link>
         <Link to='/testimonial'> <li>Testimonial</li></Link>
         <Link to='/contact'><li>Contact</li></Link>
       
@@ -43,6 +44,7 @@ function Navbar() {
         <Link to='/about'> <li onClick={closeNav} className="text-3xl py-4 opacity-100">About</li></Link>
         <Link to='/skills'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Skills</li></Link>
         <Link to='/work'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Work</li></Link>
+        <Link to='/cert'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Certification</li></Link>
         <Link to='/testimonial'> <li onClick={closeNav} className="text-3xl py-4 opacity-100">Testimonial</li></Link>
         <Link to='/contact'><li onClick={closeNav} className="text-3xl py-4 opacity-100">Contact</li></Link>
       </ul>

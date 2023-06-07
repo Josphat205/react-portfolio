@@ -7,6 +7,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
 import { AnimatePresence } from "framer-motion";
+import Cert from "./Cert";
 const AnimatedRoutes = () => {
   const location = useLocation();
   return (
@@ -17,6 +18,7 @@ const AnimatedRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/cert" element={<Cert />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
