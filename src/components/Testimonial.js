@@ -19,7 +19,7 @@ const Testimonial = () => {
     >
       <div className="max-w-[1000px] mx-auto py-2 flex flex-col justify-center w-full h-full">
         <div className="pb-2 mt-[80px]">
-          <p className="text-3xl font-bold inline border-b-4 text-gray-300  border-green-600">
+          <p className="text-2xl font-bold inline border-b-4 text-gray-300  border-green-600">
             Testimonials
           </p>
           <p className="py-3">// Check out the Testimonials </p>

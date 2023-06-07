@@ -27,12 +27,12 @@ const Skills = () => {
       {/* Container */}
       <div className="max-w-(1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="mt-[80px]  lg:ml-[100px]">
-          <p className="text-4xl font-bold inline border-b-4 border-green-500">
+          <p className="text-2xl font-bold inline border-b-4 border-green-500">
             Experience
           </p>
           <p className="py-4">These are the technologies I've worked with</p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-3 sm:grid-cols-6 gap-4 text-center py-8">
           <div className="shadow-md shadow-gray-800 hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={HTML} alt="HTHL icon" />
             <p className="my-4">HTML</p>
